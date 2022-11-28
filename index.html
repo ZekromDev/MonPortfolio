@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dd13dde450.js" crossorigin="anonymous"></script>
+    <!-- Stuff -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dd13dde450.js" crossorigin="anonymous"></script>
+    <!--  -->
+</head>
+<body>
+    <div class="ashton">
+        <img id ="avatar">
+        <span style="align-items:center;"><h1 class="author">Zekrom</h1></span>
+        <h2 class="skills">Developer / YouTuber / Analyst</h2>
+        <h1 class="Citation">Le créateur de la fin justifie les moyens</h1>
+        <div style="margin-top:30px;">
+            <div class="socials">
+                <h1 class="title">YouTube</h1>
+                <a style="text-decoration: none" href="https://www.youtube.com/channel/UCGXCIzvQ_PU60mhDVjdq5Fw" target="_blank"><h1 id="youtube" class="link">Chaîne de Zekrom</h1></a>
+            </div>
+            <div class="socials">
+                <h1 class="title">Discord</h1>
+                <a style="text-decoration: none"><h1 id="username" class="link">Zekrom#0001</h1></a>
+            </div>
+            <br>
+            <div class="social">
+                <a style="text-decoration: none" href="https://github.com/ZekromDev" target="_blank"><h1 id="Github" class="link">Github de Zekrom</h1></a>
+                <br>
+        </div>
+    </div>
+    <h1 style="font-size: 15px;color:#3d3258;">Made with <i style="color:rgb(255, 0, 0);" class="fa-solid fa-heart"></i> by <a style="color:#00ffff;background: url(https://static.cracked.to/images/bg1.gif)">Zekrom</a> & <a href="https://leaked.wiki/api" target="_blank" style="text-decoration: none;color:#00ffff;">Leaked.Wiki API</a></h1>
+    <a href="https://www.buymeacoffee.com/Zekrom?new=1">Achete moi un cafe?</a>
+</body>
+<script>
+    $.getJSON('https://api.leaked.wiki/discorduser?id=711679328362037340',
+    function(data) {
+        document.getElementById("avatar").src = data.avatar;
+        document.getElementById("username").innerHTML = data.username + "#" + data.discriminator
+    }
+    )
+</script>
+</html>

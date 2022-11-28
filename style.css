@@ -1,0 +1,90 @@
+body{
+    margin: auto;
+    background-color: aliceblue;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+ 
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;}
+ 
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+.ashton {
+    width: fit-content;
+    padding: 45px;
+    margin: auto;
+    background-color: #1c162b;
+    margin-top: 5%;
+    box-shadow: 5px 5px 5px #1f1830;
+    border-radius: 5px;
+}
+
+.ashton :is(img) {
+    box-shadow: 5px 5px 5px #241b3b;
+    border-radius: 5px;
+}
+
+.author {
+    color: #9500fd;
+    font-size: 25px;
+    text-shadow: 2px 2px 5px rgba(196, 2, 245, 0.342);
+}
+
+.skills {
+    color: white;
+    font-size: 15px;
+}
+
+.Citation {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+}
+
+.socials {
+    background-color: #120e1b;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 3px 3px 3px #1d1336;
+}
+
+
+.title {
+    vertical-align: middle;
+    display: inline;
+    color: #6c6383;
+    font-size: 20px;
+}
+
+
+.link {
+    display: inline;
+    color: white;
+    font-weight: 100;
+    color: #bdace7;
+    font-size: 12px;
+    background-color: #1e192c;
+    padding: 8px;
+    border-radius: 5px;
+}
